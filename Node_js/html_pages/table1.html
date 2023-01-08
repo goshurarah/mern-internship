@@ -1,0 +1,167 @@
+<!--this is html file-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Table Page</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            color: cornsilk;
+        }
+        body{
+            background-color: khaki;
+        }
+
+        .background {
+            background-image: url(images/wallpaper.jpg);
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+
+        }
+
+        .heading {
+            width: 500px;
+            margin: 2% auto;
+            border: 2px solid purple;
+            border-style: double;
+            background-color: grey;
+            border-radius: 30px;
+            border-width: thick;
+            text-align: center;
+            font-size: 15px;
+            font-family: cursive;
+
+        }
+
+        @keyframes animation-tablestyle {
+            0% {
+                background-color: orchid;
+                border-radius: 10px;
+                height: 500px;
+                margin: 20px auto;
+            }
+
+            25% {
+                background-color: gold;
+                border-radius: 20px;
+                height: 400px;
+                margin: 30px auto;
+            }
+
+            50% {
+                background-color: green;
+                border-radius: 30px;
+                height: 300px;
+                margin: 40px auto;
+            }
+
+            75% {
+                background-color: brown;
+                border-radius: 20px;
+                height: 400px;
+                margin: 30px auto;
+            }
+
+            100% {
+                background-color: skyblue;
+                border-radius: 10px;
+                height: 500px;
+                margin: 20px auto;
+            }
+        }
+
+        .table-style {
+            border: 2px solid red;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            margin: auto;
+            padding: 25px;
+            word-spacing: 5px;
+            animation-name: animation-tablestyle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        th {
+            font-size: 16px;
+            font-family: cursive;
+            padding: 5px;
+        }
+
+        td {
+            border: 2px solid green;
+            background: khaki;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            color: black;
+            margin: 2% auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="background">
+        <div class="heading">
+            <h1>Orders</h1>
+        </div>
+        <!--Insert Table-->
+        <table class="table-style">
+            <tr>
+                <th>SR NO#</th>
+                <th>Order Date</th>
+                <th>Client Name</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>01-08-2021</td>
+                <td>Khuram</td>
+                <td>$12.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>10-09-2021</td>
+                <td>Ali</td>
+                <td>$16.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>15-10-2021</td>
+                <td>Kamran</td>
+                <td>$14.00
+            </tr>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>12-11-2021</td>
+                <td>Talha</td>
+                <td>$05.00</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>20-12-2021</td>
+                <td>Haider</td>
+                <td>$89.00</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+
+</html>

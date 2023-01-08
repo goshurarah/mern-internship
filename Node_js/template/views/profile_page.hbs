@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Engine EJS</title>
+    <link rel="stylesheet" href="file:///D:/Hurarah/Project/Practice_files/Bootstrap/css/bootstrap.min.css">
+</head>
+{{>styles}}
+<style>
+    .footer {
+        background-color: indigo;
+        width: 100%;
+        height: 5rem;
+        margin-top: auto;
+    }
+
+    .footer p {
+        color: white;
+        line-height: 4rem;
+        text-align: center;
+
+    }
+</style>
+
+<body>
+    {{>header}}
+    <h1 class="color">WELCOME! PROFILE PAGE OWNER = {{ user_info.name}}</h1>
+    <h2 class="color">WELCOME! PROFILE PAGE OWNER = {{ user_info.age}}</h2>
+    <h3 class="color">WELCOME! PROFILE PAGE OWNER = {{ user_info.email}}</h3>
+    <h4 class="color">WELCOME! PROFILE PAGE OWNER = {{ user_info.adress}}</h4>
+    <h5 class="color">WELCOME! PROFILE PAGE OWNER = {{ user_info.gender}}</h5>
+    <h6 class="color">WELCOME! PROFILE PAGE OWNER SKILLS = {{ user_info.skills}}</h6>
+
+  
+    {{>footer}}
+</body>
+
+</html>
